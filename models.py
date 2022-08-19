@@ -51,7 +51,6 @@ class Atividades(Base):
         db_session.commit()
 
 
-
 def init_db():
     Base.metadata.create_all(bind=engine)
 

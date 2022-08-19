@@ -21,10 +21,12 @@ def altera_pessoas():
     pessoa.nome = 'Héscules'
     pessoa.save()
 
+
 # Exclui dados na tabela pessoa
 def exclue_pessoas():
     pessoa = Pessoas.query.filter_by(nome="kira").first()
     pessoa.delete()
+
 
 if __name__ == '__main__':
     #insere_pessoas()
